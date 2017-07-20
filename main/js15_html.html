@@ -1,0 +1,58 @@
+<h2>Writing to the output streem</h2>
+JS can write directly to the output stream. However it will overwrite the whole page. So never use it, use innerHTML instead. To come back reload the page.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+el = this.event.target;
+print(el);
+el.innerHTML = Date();
+print(el.rows);
+el.rows=15;
+print(el.cols);
+print(el.maxlength);
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>Changing HTML style</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+el = this.event.target;
+print(el)
+print(el.style)
+print(el.style.border)
+el.style.border='5px solid red'
+el.style.backgroundColor='pink';
+el.style.color='blue'
+el.style.width='40%'
+el.style.padding='20px'
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>Style attibutes</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+el = this.event.target;
+print(el)
+styles = el.style
+print(styles)
+for (style in styles) {
+  val = styles[style]
+  if (val) {print(style+" = "+val)};
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>EventListener</h2>
+Add the event onclick to the pre element <b>out4</b>. When clicking change the innerHTML of <b>out3</b> to Date().
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+function displayDate(){
+  document.getElementById('out3').innerHTML=Date();
+}
+el = document.getElementById("out4");
+print(el)
+el.addEventListener("click", displayDate)
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->

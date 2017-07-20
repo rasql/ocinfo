@@ -1,0 +1,40 @@
+<h2>1 My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<h2>2 JavaScript can change HTML content</h2>
+
+<p id="demo2">This ia HTML paragraph.</p>
+
+<button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+<h2>3 Change HTML attributes.</h2>
+
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+Turn on the light</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+Turn off the light</button>
+
+<h2>4 Change the style of an HTML element</h2>
+
+<p id="demo4">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="document.getElementById('demo4').style.fontSize='25px'">Click Me!</button>
+
+
+<h2>5 Hide HTML elements.</h2>
+
+<p id="demo5">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('demo5').style.display='none'">Click Me!</button>
+
+
+<h2>6 Show hidden HTML elements.</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="demo6" style="display:none">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('demo6').style.display='block'">Click Me!</button>

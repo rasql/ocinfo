@@ -1,0 +1,80 @@
+<h2>Bitwise operations</h2>
+Internally integer numbers are represented as binary numbers, as sequence of zero and ones. The fonction toString(2) allows to transform a number into a string of base 2
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input" rows=15>
+for (i=0; i<16; i++) {
+	print(i+" = "+i.toString(2));
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+<h3>Right-shift</h3>
+The >> operator shifts the bits a certain amount to the right. A right-shift by 1 correpsonds to a divison by 2. A right-shift by 2 correpsonds to a divison by 4. 
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input" rows=10>
+val = 1234443;
+for (i=0; i<10; i++) {
+	val >>=1;
+	print(i+" "+val+" "+val.toString(2));
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h3>Left-shift</h3>
+The << operator is a left-shift and corresponds to the multiplication by 2.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+val = 123;
+for (i=0; i<10; i++) {
+	val <<=1;
+	print(val+" = "+val.toString(2));
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+<h3>Bitwise AND</h3>
+The & operator combines each individual bit of the two operands
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+x=12335;
+y=11298;
+z=x & y
+print(x.toString(2))
+print(y.toString(2))
+print(z.toString(2))
+print(x && y)
+print(x && false)
+
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+<h3>Bitwise OR</h3>
+The | operator combines each individual bit of the two operands
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+x=12335;
+y=11298;
+z=x | y
+print(x.toString(2))
+print(y.toString(2))
+print(z.toString(2))
+print(x || y)
+print(x || false)
+
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+<h3>Bitwise XOR (^)</h3>
+The XOR operator returns 1 if the bits are different and returns 0 if the bits are identical. The space caracter in the last print instruction is added in order to right-align the three numbers.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+x=12335;
+y=11298;
+z=x ^ y
+print(x.toString(2))
+print(y.toString(2))
+print(z.toString(2))
+
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->

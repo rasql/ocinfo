@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="js00.css">
+<script src="js00.js"></script>
+<title>JavaScript Editor</title>
+</head>
+
+<body>
+<header>JavaScript Editor</header>
+
+<!-- -------------------------------------------- -->
+<h2>String, number and boolean type</h2>
+Play with the following definitions. Use the function <b>print</b> to print the result.
+<div style="border:1px solid red; position:relative;"">
+<button type="button" onclick="myFunction(1)">Update</button>
+<textarea class="input" id="in1" rows=10>
+a = 123;
+b = 'hello';
+c = true;
+print(a);
+print(b);
+print(c);
+print( typeof(a) )
+print( typeof(b) )
+print( typeof(c) )
+
+</textarea>
+<pre class="output" id="out1"></pre></div>
+<!-- -------------------------------------------- -->
+<h2>Arithmtic Operations</h2>
+Use the arithmetic operators (+, -, *, /, %) to create expressions.
+<div style="border:1px solid red; position:relative;"">
+<button type="button" onclick="myFunction(2)">Update</button>
+<textarea class="input" id="in2" rows=10>
+a = 3;
+b = 4; 
+c = 5;
+print(a+b);
+print(b*c);
+print(a/b);
+print((a+b)/(b+c));
+
+</textarea>
+<pre class="output" id="out2"></pre></div>
+<!-- -------------------------------------------- -->
+<h2>For loop</h2>
+Use a for loop to repeat a block several times.
+<div style="border:1px solid red; position:relative;">
+<button type="button" onclick="myFunction(3)">Update</button>
+
+<textarea class="input" id="in3" rows=10>
+var person = {name:"John", last:"Doe", age:54};
+for (i=0; i<9; i++) {
+   print("f("+i+")="+i**2);
+}
+</textarea>
+<pre class="output" id="out3"></pre></div>
+<!-- -------------------------------------------- -->
+<h2>Quadratic Equation</h2>
+Ecrire un programme qui permette d'introduire trois nombres, a, b et c, à l'aide de la méthode prompt() et d'afficher ensuite la solution de l'équation ax2+bx+c=0 dans le document avec une phrase du genre : les solutions de l'équation ax2+bx+c=0 sont ... .
+Prévoir une condition sur a dans le cas où le nombre introduit est zéro , ainsi que sur les 3 cas du discriminant.      
+<div style="border:1px solid red; position:relative;">
+<button type="button" onclick="myFunction(4)">Update</button>
+
+<textarea class="input" id="in4" rows=10>
+a = intparse(prompt('enter a'))
+print(a)
+</textarea>
+<pre class="output" id="out4"></pre>
+</div>
+
+
+<footer>Gymnase du Bugnon - OC informatique</footer>
+
+</body>
+</html> 

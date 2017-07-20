@@ -1,0 +1,59 @@
+<h2>Nodes</h2>
+You can use the following node properties to navigate between nodes with JavaScript:
+parentNode, 
+childNodes[nodenumber], 
+firstChild, 
+lastChild, 
+nextSibling, 
+previousSibling,
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+el = document.getElementById('in1');
+print(el);
+print(el.parentNode);
+print(el.parentNode.parentNode);
+print(el.parentNode.parentNode.parentNode);
+print(el.parentNode.parentNode.parentNode.parentNode);
+
+print(el);
+print(el.nextSibling);
+print(el.nextSibling.nextSibling);
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>DOM root nodes</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+alert(document.head.innerHTML)
+alert(document.body.innerHTML)
+alert(document.documentElement.innerHTML)
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<!-- -------------------------------------------- -->
+<h2>Node type property</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+el = document.getElementById('in1');
+print(el.nodeName)
+print(el.nodeType)
+
+print(el.firstChild.nodeName)
+p</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<!-- -------------------------------------------- -->
+<h2>Append nodes</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+var para = document.createElement('p')
+var node = document.createTextNode('this is new')
+
+el = document.getElementById('out4').parentNode
+print(el)
+el.appendChild(node)
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->

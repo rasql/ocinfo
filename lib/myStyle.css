@@ -1,0 +1,132 @@
+body {
+	font-family:sans-serif;
+	padding:0;
+	margin:0;
+}
+
+header {
+	background-color:green;
+	margin:0;
+	border-width:0;
+	padding:10px;
+	color:white;
+	width:100%;	
+	position:static;
+	right:0px;
+	top:0px;
+}
+
+footer {
+	background-color:green;
+	margin:0;
+	border-width:0;
+	padding:10px;
+	color:white;
+	width:100%;	
+	position:fixed;
+	bottom:0px;	
+}
+
+div.frame {
+	//border:1px solid green;
+	position:relative;
+	margin:10px 0;
+	}
+	
+
+.input {
+	border:1px solid grey;
+	font-family:monospace;
+	margin:0 10px;
+	width:40%;
+	position:relative;
+	left:0px:
+}
+
+.output {
+	border:1px solid grey;
+	padding:5px;
+	margin:0 10px;
+	width:50%;
+	height:100%;
+	position:absolute;
+	right:0px;
+	top: 0px;
+	overflow:scroll;
+}
+
+.marked {
+	background-color:yellow;
+	border:2px solid red;
+}
+
+.important {
+	background-color:lightblue;
+	border-left:5px solid blue;
+}
+
+button {
+	/* background-color:red; */
+	position:relative;
+	//top: 0px;
+}
+
+
+/* === navigation menu === */
+nav ul {
+	list-style-type: none;
+	font-size: small;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: lightgray;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+}
+
+nav li {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+nav li:hover {
+	background-color: #555;
+	color:white;
+	border-bottom:1px solid #555;
+}
+
+nav li:last-child {
+	border-bottom: none;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+	margin-left: 200px;
+	padding-left:10px;
+}
+
+
+/* HTML Editor */
+}
+.html_input {
+	border:1px solid blue;
+	margin:30px 10px;
+	font-family:monospace;
+	width:45%;
+	left:0px;
+	}
+
+p.html_output {
+	border:1px solid green;
+	width:50%;
+	position:absolute;
+	right:0px;
+	overflow:auto;
+	}

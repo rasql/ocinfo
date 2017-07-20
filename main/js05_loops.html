@@ -1,0 +1,40 @@
+<h2>Loops</h2>
+A loop allows to repeat a certain sequence of instructions. The first statement (i=0) is the initialization. It is executed only once at the beginning. The second statement (i<7) is the termination condition. It is at the beginning of every iteration. Finally the last part (i++) is the incrementation. It is done at the end of each iteration.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input" rows=5>
+for (i=0; i<7; i++) {
+  print(i)
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+Try to modify the beginning and end values and the iteration.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input" rows=5>
+for (i=10; i<20; i+=3) {
+  print(i)
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+You can also use the loop counter as an index for a string variable.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=5>
+s="hello";
+for (i=0; i<s.length; i++) {
+  print(i+" = "+s[i]);
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+The for/in statement can be used to loop through the properties of an object.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=7>
+var person = {fname:"John", lname:"Doe", age:25}; 
+print(person)
+for (x in person) {
+    print(x);
+    print(person[x]);
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->

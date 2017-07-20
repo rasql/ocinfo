@@ -1,0 +1,50 @@
+<h2>Finding HTML objects</h2>
+Play with the following definitions. Use the function <b>print</b> to print the result.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+print(document.anchors);
+print(document.body);
+print(document.head);
+print(document.title);
+print(document.URL);
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>Finding HTML elements by ID</h2>
+The easiest way to find an HTML element in the DOM, is by using the element id.
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+var el= document.getElementById("in1");
+print(el);
+var el2= document.getElementById("out1");
+print(el2);
+var x = document.getElementsByTagName("h2");
+print(x)
+var y = document.getElementsByClassName("input");
+print(y)
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>Finding HTML elements by CSS selector</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+var x = document.querySelectorAll("pre.output");
+print(x)
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>Finding HTML elements</h2>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
+var x = document.getElementsByTagName("h2");
+print(x);
+n=x.length;
+print(n)
+for (i=0; i<n; i++) {
+  print(x[i].innerHTML);
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
