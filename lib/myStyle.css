@@ -1,3 +1,4 @@
+/* === main layout === */
 body {
 	font-family:sans-serif;
 	padding:0;
@@ -5,16 +6,34 @@ body {
 }
 
 header {
-	background-color:green;
+	background-color:grey;
 	margin:0;
 	border-width:0;
-	padding:10px;
+	padding:0;
 	color:white;
-	width:100%;	
-	position:static;
-	right:0px;
+	width:100%;
+	height:40px;
+	position:fixed;
 	top:0px;
 }
+header ul {
+	list-style-type:none;
+	margin:0;
+	padding:0
+	overfow:hidden;
+}
+
+header li {
+	float:left;
+	display: inline;
+	padding: 8px 16px;
+	margin: 0;
+}
+
+header li:hover {
+	background-color:green;
+}
+
 
 footer {
 	background-color:green;
@@ -30,15 +49,16 @@ footer {
 div.frame {
 	//border:1px solid green;
 	position:relative;
-	margin:10px 0;
+	margin:10px;
 	}
 	
 
 .input {
-	border:1px solid grey;
+	border:none;
 	font-family:monospace;
-	margin:0 10px;
-	width:40%;
+	margin:0;
+	width:99%;
+	
 	position:relative;
 	left:0px:
 }
@@ -46,12 +66,9 @@ div.frame {
 .output {
 	border:1px solid grey;
 	padding:5px;
-	margin:0 10px;
-	width:50%;
+	margin:0;
+	width:100;
 	height:100%;
-	position:absolute;
-	right:0px;
-	top: 0px;
 	overflow:scroll;
 }
 
@@ -71,12 +88,19 @@ button {
 	//top: 0px;
 }
 
+main {
+	margin-top:30px;
+	margin-left: 200px;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
 
 /* === navigation menu === */
 nav ul {
 	list-style-type: none;
 	font-size: small;
-	margin: 0;
+	margin: 0 60 0 0;
 	padding: 0;
 	width: 200px;
 	background-color: lightgray;
@@ -107,26 +131,16 @@ nav li:last-child {
     color: white;
 }
 
-main {
-	margin-left: 200px;
-	padding-left:10px;
-}
-
 
 /* HTML Editor */
-}
-.html_input {
-	border:1px solid blue;
-	margin:30px 10px;
-	font-family:monospace;
-	width:45%;
-	left:0px;
+.input_sidebyside {
+	height:100%;
+	width:48%;
 	}
-
-p.html_output {
-	border:1px solid green;
+	
+.output_sidebyside {
+	height:100%;
 	width:50%;
-	position:absolute;
-	right:0px;
-	overflow:auto;
-	}
+	float:right;
+}
+

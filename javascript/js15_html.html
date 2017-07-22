@@ -1,7 +1,9 @@
+<button onclick="set_all_js()">Run all JavaScript</button>
+
 <h2>Writing to the output streem</h2>
 JS can write directly to the output stream. However it will overwrite the whole page. So never use it, use innerHTML instead. To come back reload the page.
 <!-- -------------------------------------------- -->
-<div class="frame"><textarea class="input"rows=10>
+<div class="frame"><textarea class="input"rows=8>
 el = this.event.target;
 print(el);
 el.innerHTML = Date();
@@ -45,14 +47,13 @@ for (style in styles) {
 
 
 <h2>EventListener</h2>
-Add the event onclick to the pre element <b>out4</b>. When clicking change the innerHTML of <b>out3</b> to Date().
+Add the event onclick to the above <b>h2</b> element. Try clicking on it to change the innerHTML of <b>out3</b> to Date().
 <!-- -------------------------------------------- -->
-<div class="frame"><textarea class="input"rows=10>
+<div class="frame"><textarea class="input"rows=8>
 function displayDate(){
-  document.getElementById('out3').innerHTML=Date();
+  document.getElementsByTagName("h2")[3].innerHTML=Date();
 }
-el = document.getElementById("out4");
+el = document.getElementsByTagName("h2")[3];
 print(el)
-el.addEventListener("click", displayDate)
-</textarea><pre class="output" onclick="set_js()"></pre></div>
+el.addEventListener("click", displayDate)</textarea><pre class="output" onclick="set_js()"></pre></div>
 <!-- -------------------------------------------- -->

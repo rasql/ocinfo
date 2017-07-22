@@ -1,0 +1,38 @@
+<button onclick="set_all_js()">Run all JavaScript</button>
+
+
+<h2>The HTMLCollection object</h2>
+The getElementsByTagName() method returns an HTMLCollection object.
+An HTMLCollection object is an array-like list (collection) of HTML elements.
+The following code selects all h2 elements in a document:
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=6>
+var x = document.getElementsByTagName("h2");
+var x = document.getElementsByTagName("h2");
+print(x);
+print(x[0])
+n = x.length;
+for (i=0; i<n; i++) {
+	print(x[i].innerHTML)
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
+
+
+<h2>NodeList object</h2>
+A NodeList object is a list (collection) of nodes extracted from a document.
+A NodeList object is almost the same as an HTMLCollection object.
+
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=6>
+el = document.getElementById("in2").parentNode;
+print(el);
+children = el.childNodes;
+print(children);
+n = children.length;
+print(n)
+for (i=0; i<n; i++) {
+	print(children[i])
+}
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->

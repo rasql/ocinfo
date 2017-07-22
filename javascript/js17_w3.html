@@ -1,48 +1,44 @@
+<button onclick="set_all_js()">Run all JavaScript</button>
+
 <h2>Hide/show/toggle elements</h2>
 Use the w3.hide method to hide/show/toggle elements by using id, class or tag namme.
-<div class="frame">
-<button type="button" onclick="myFunction(1)">Update</button>
-<textarea class="input" id="in1" rows=10>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
 w3.hide('#out1') //using id
 //w3.show('#out1') //using id
 //w3.toggleShow('#out1') //using id
 //w3.hide('h2') //using tag name
 //w3.hide('.output') //using class name
-
-</textarea>
-<pre class="output" id="out1"></pre></div>
+</textarea><pre class="output" onclick="set_js()"></pre></div>
 <!-- -------------------------------------------- -->
+
 <h2>Add style</h2>
 Use the w3.show method to unhide elements by using id, class or tag namme.
-<div class="frame"><button type="button" onclick="myFunction(2)">Update</button>
-<textarea class="input" id="in2" rows=10>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
 w3.addStyle('.output', 'background-color', 'lightgreen')
 //w3.addStyle('#in2', 'border', '5px solid purple')
-
-
-</textarea>
-<pre class="output" id="out2"></pre></div>
+</textarea><pre class="output" onclick="set_js()"></pre></div>
 <!-- -------------------------------------------- -->
+
+
 <h2>Toggle/add/remove class</h2>
 Toggle on/off or toggle between two classes. Add or remove one ore several classes.
-<div class="frame"><button type="button" onclick="myFunction(3)">Update</button>
-<textarea class="input" id="in3" rows=10>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
 w3.toggleClass('h2', 'marked')
 //w3.toggleClass('h2', 'marked', 'important')
 //w3.addClass('h2', 'marked important')
 //w3.removeClass('h2', 'marked important')
 //w3.addClass('#out4', 'important')
 //w3.removeClass('#out4', 'important')
-
-</textarea>
-<pre class="output" id="out3"></pre></div>
+</textarea><pre class="output" onclick="set_js()"></pre></div>
 <!-- -------------------------------------------- -->
+
+
 <h2>Include HTML</h2>
-
-<div class="frame"><button type="button" onclick="myFunction(4)">Update</button>
-<textarea class="input" id="in4" rows=10>
+<!-- -------------------------------------------- -->
+<div class="frame"><textarea class="input"rows=10>
 w3.includeHTML();
-
-
-</textarea>
-<pre class="output" id="out4"></pre></div>
+</textarea><pre class="output" onclick="set_js()"></pre></div>
+<!-- -------------------------------------------- -->
